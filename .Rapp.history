@@ -1,0 +1,123 @@
+?lapply
+?lm
+getwd()
+ls()
+source("myfunction.r")
+ls()
+second(56)
+x<-5
+x
+print(x)
+x <-1:30
+x
+1/inf
+x<-1
+y<-Inf
+x/y
+x<-1L
+x/y
+y/x
+x<- vector("integer", length=10)
+x
+y<- vector("numeric", length=10)
+y
+x-y
+z<-c("a",TRUE)
+я
+z
+class(z)
+?с
+?c
+?dim
+?$
+??$
+?sapply
+?lapply
+?rm()
+?source()
+x<- c("a","b","c","d","e","b","a")
+x[1]
+x[3]
+x[1:4]
+x[x>"b"]
+u<-x>"b"
+u
+x[u]
+?complete.cases
+?rep
+x<-4
+class(x)
+x <- c(4, "a", TRUE)
+class(x)
+x <- c(1,3, 5)
+y <- c(3, 2, 10)
+rbind(x,y)
+?rbind
+x <- list(2, "a", "b", TRUE)
+x[[2]]
+class(x[[2]])
+x <- c(3, 5, 1, 10, 12, 6)
+x
+x[x < 6] <- 0
+x
+f<-read.csv("hw1_data.csv")
+f
+f<-read.csv("hw1_data.csv",2)
+а
+f
+f<-read.csv("hw1_data.csv",nrows=2)
+f
+ff<-read.csv("hw1_data.csv")
+ff[47]
+ff[1,47]
+ff[1,4]
+ff[1,1]
+ff[1,2]
+ff[47,1]
+ff[47,$Ozone]
+ff[47,Ozone]
+ff[47,"Ozone"]
+oz<-ff(,Ozone)
+oz<-ff[,Ozone]
+oz<-ff[,1]
+oz
+bad<-is.na(oz)
+bad
+oz[bad]
+length(oz[bad])
+mean(oz[!bad])
+good <- complete.cases(ff$Ozone, ff$Solar.R, ff$Temp)
+good
+?mean
+ffgood=ff(good)
+ffgood=ff[good]
+?с
+?c
+mean(ff$Solar.R[good & ff$Ozone > 31 ff$Temp >90])
+mean(ff$Solar.R[good & ff$Ozone > 31 & ff$Temp >90])
+good2 <- complete.cases(ff$Temp, ff$Month)
+mean(ff$Temp[good2&ff$Month--6])
+mean(ff$Temp[good2&ff$Month==6])
+good3 <- complete.cases(ff$Ozone, ff$Month)
+max(ff$Ozone[ff$Month==5])
+max(ff$Ozone[good3&ff$Month==5])
+attributes(ff)
+packageVersion("swirl")
+install.packages("swirl")
+packageVersion("swirl")
+install.packages("swirl")
+packageVersion("swirl")
+packageVersion("digest")
+library(swirl)
+install_from_swirl("R Programming")
+ls()
+rm(list=ls())
+ls()
+swirl()
+library(swirl)
+install_from_swirl("R Programming")
+swirl()
+bye()
+install.packages("KernSmooth")
+library(KernSmooth)
+library(KernSmooth)
