@@ -17,4 +17,5 @@ columnmean <- function(x, removeNA = TRUE){
                  means[i] <-mean(x[,i], na.rm=removeNA)
                }
            means  
-  }
+}
+
