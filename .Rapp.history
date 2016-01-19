@@ -120,4 +120,8 @@ swirl()
 bye()
 install.packages("KernSmooth")
 library(KernSmooth)
-library(KernSmooth)
+?lm
+?~
+0
+?nrows
+??nrows
