@@ -125,3 +125,5 @@ library(KernSmooth)
 0
 ?nrows
 ??nrows
+mean(x)
+traceback
