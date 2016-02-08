@@ -127,3 +127,69 @@ library(KernSmooth)
 ??nrows
 mean(x)
 traceback
+library(httr)#
+#
+oauth_endpoints("github")#
+#
+myapp <- oauth_app("github",#
+                   key = "5c626b9c606f5d6880cb",#
+                   secret = "dbd655e155b8fdeb8e52046fe59af07efcb0fc60")#
+#
+##Get OAuth credentials#
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)#
+#
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/rate_limit", gtoken)#
+stop_for_status(req)#
+content(req)
+install.package("httpuv")
+install.packages("httpuv")
+library(httpuv)
+oauth_endpoints("github")#
+#
+myapp <- oauth_app("github",#
+                   key = "5c626b9c606f5d6880cb",#
+                   secret = "dbd655e155b8fdeb8e52046fe59af07efcb0fc60")#
+#
+##Get OAuth credentials#
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)#
+#
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/rate_limit", gtoken)#
+stop_for_status(req)#
+content(req)
+library(httr)#
+library(httpuv)#
+library(jsonlite)#
+#
+oauth_endpoints("github")#
+#
+myapp <- oauth_app("github",#
+                   key = "5c626b9c606f5d6880cb",#
+                   secret = "dbd655e155b8fdeb8e52046fe59af07efcb0fc60")#
+#
+##Get OAuth credentials#
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)#
+#
+gtoken <- config(token = github_token)#
+##req <- GET("https://api.github.com/rate_limit", gtoken)#
+req <- with_config(gtoken, GET("https://api.github.com/rate_limit"))#
+stop_for_status(req)#
+jsondata<-fromJSON(content(req))
+gtoken <- config(token = github_token)#
+##req <- GET("https://api.github.com/rate_limit", gtoken)#
+req <- with_config(gtoken, GET("https://api.github.com/rate_limit"))#
+stop_for_status(req)#
+jsondata<-fromJSON(content(req))
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/rate_limit", gtoken)#
+##req <- with_config(gtoken, GET("https://api.github.com/rate_limit"))#
+stop_for_status(req)#
+jsondata<-fromJSON(content(req))
+gtoken <- config(token = github_token)#
+req <- GET("https://api.github.com/rate_limit", gtoken)#
+##req <- with_config(gtoken, GET("https://api.github.com/rate_limit"))#
+stop_for_status(req)#
+jsondata<-content(req)
+jsondata[[5]]
+jsondata[[1]]
